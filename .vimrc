@@ -45,6 +45,7 @@ set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu            " visual autocomplete from command menu
 set showmatch           " highlight matching [{()}]
+set lazyredraw          " redraw only when we need to.
 
 " Searching
 set incsearch           " search as characters are entered
