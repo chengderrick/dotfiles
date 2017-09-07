@@ -63,6 +63,10 @@ set foldmethod=indent   " fold based on indent level
 nnoremap B ^ " move to beginning/end of line
 nnoremap E $
 nnoremap gV `[v`] " highlight last inserted text
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " resize current buffer by +/- 5
 nnoremap <S-left> :vertical resize -5<cr>
@@ -108,6 +112,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['rubocop']
 
 " NERDTree bundle
-silent! map <F3> :NERDTreeFind<CR>
+" Toggle NERDtree
+silent !map \  :NERDTreeToggle<CR>
+" File tree browser showing current file
+silent !map \| :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
