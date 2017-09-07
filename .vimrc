@@ -64,6 +64,12 @@ nnoremap B ^ " move to beginning/end of line
 nnoremap E $
 nnoremap gV `[v`] " highlight last inserted text
 
+" resize current buffer by +/- 5
+nnoremap <S-left> :vertical resize -5<cr>
+nnoremap <S-down> :resize +5<cr>
+nnoremap <S-up> :resize -5<cr>
+nnoremap <S-right> :vertical resize +5<cr>
+
 " Highligh trailing white spaces on non-insert mode
 highlight ExtraWhitespace ctermbg=red guibg=red
 au ColorScheme * highlight ExtraWhitespace guibg=red
