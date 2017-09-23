@@ -113,8 +113,8 @@ let g:syntastic_ruby_checkers = ['rubocop']
 
 " NERDTree bundle
 " Toggle NERDtree
-silent !map \  :NERDTreeToggle<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
 " File tree browser showing current file
-silent !map \| :NERDTreeFind<CR>
+map <silent> <C-\> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
