@@ -16,6 +16,8 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set nocompatible
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 filetype plugin indent on
 
